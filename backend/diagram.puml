@@ -1,0 +1,94 @@
+@startuml
+
+class User {
+  +id : int
+  +username : str
+  +password : str
+  +email : str
+}
+
+class UserProfile {
+  +id : int
+  +full_name : str
+  +about : text
+  +last_seen : datetime
+  +show_last_seen : bool
+  +show_about : bool
+  +profile_picture : file
+}
+
+class ChatGroup {
+  +id : int
+  +name : str
+  +creator : User
+  +created_at : datetime
+  +is_private : bool
+  +group_icon : file
+}
+
+class Message {
+  +id : int
+  +sender : User
+  +receiver : User
+  +group : ChatGroup
+  +content : text
+  +media : file
+  +is_media : bool
+  +timestamp : datetime
+  +expires_at : datetime
+}
+
+class MessageReaction {
+  +id : int
+  +message : Message
+  +user : User
+  +reaction : str
+}
+
+class GroupInvite {
+  +id : int
+  +group : ChatGroup
+  +invited_by : User
+  +invited_user : User
+  +timestamp : datetime
+  +accepted : bool
+}
+
+class ChatMediaMetadata {
+  +id : int
+  +message : Message
+  +file_type : str
+  +file_size : int
+  +duration : float
+}
+
+class AutoDeleteSettings {
+  +id : int
+  +user : User
+  +enabled : bool
+  +duration_minutes : int
+}
+
+class BlockedUser {
+  +id : int
+  +user : User
+  +blocked : User
+}
+
+UserProfile --> User
+ChatGroup --> User : creator
+ChatGroup "0..*" -- "0..*" User : members
+Message --> User : sender
+Message --> User : receiver
+Message --> ChatGroup : group
+MessageReaction --> Message
+MessageReaction --> User
+GroupInvite --> ChatGroup
+GroupInvite --> User : invited_by
+GroupInvite --> User : invited_user
+ChatMediaMetadata --> Message
+AutoDeleteSettings --> User
+BlockedUser --> User : user
+BlockedUser --> User : blocked
+
+@enduml
