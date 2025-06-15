@@ -1,0 +1,57 @@
+# === Python / Django ===
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+db.sqlite3
+*.db
+.env
+.env.*
+
+# Django media/static
+/media
+/staticfiles
+/mediafiles
+
+# VSCode
+.vscode/
+
+# mypy / coverage / pycache
+.mypy_cache/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# === Node / React ===
+node_modules/
+*.tsbuildinfo
+build/
+dist/
+.env.local
+.env.development
+.env.production
+.env.test
+
+# === OS / Misc ===
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# === Pip / venv ===
+venv/
+env/
+ENV/
+*.egg-info/
+pip-log.txt
+
+# === Git ===
+*.orig
+*.bak
+
+# === Celery / Redis temp files ===
+celerybeat-schedule
+celerybeat.pid

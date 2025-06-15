@@ -1,0 +1,16 @@
+Django>=5.2.1,<6.0
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+drf-yasg
+channels
+channels_redis
+celery
+redis
+psycopg2
+Pillow
+python-magic
+django-cleanup
+boto3
+django-storages
+python-dotenv
