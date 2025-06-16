@@ -107,8 +107,4 @@ Hi, I'm **Chanchal Sen** – a Full Stack Developer with strong backend and syst
 
 📫 [LinkedIn](https://linkedin.com/in/chanchalsen) | [GitHub](https://github.com/ChanchalSen09)
 
----
 
-## 📄 License
-
-MIT – Feel free to fork, use, or contribute.
