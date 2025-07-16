@@ -105,6 +105,6 @@ A **real-time, scalable, production-ready chat app** built with **React + TypeSc
 
 Hi, I'm **Chanchal Sen** – a Full Stack Developer with strong backend and system design skills. This project reflects my commitment to **scalable architectures**, **clean coding**, and **industry-level practices**.
 
-📫 [LinkedIn](https://linkedin.com/in/chanchalsen) | [GitHub](https://github.com/ChanchalSen09)
+📫 [LinkedIn](https://www.linkedin.com/in/chanchal09/) | [GitHub](https://github.com/ChanchalSen09)
 
 
